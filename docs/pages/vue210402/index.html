@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue2快速上手 | helloChen</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="welcome to my world">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.3e8ba679.css" as="style"><link rel="preload" href="/assets/js/app.759f0509.js" as="script"><link rel="preload" href="/assets/js/3.fbf107cc.js" as="script"><link rel="preload" href="/assets/js/1.5d910c0c.js" as="script"><link rel="preload" href="/assets/js/31.794ec7a4.js" as="script"><link rel="prefetch" href="/assets/js/10.1dc3d4a1.js"><link rel="prefetch" href="/assets/js/11.9ad00484.js"><link rel="prefetch" href="/assets/js/12.51fdde5f.js"><link rel="prefetch" href="/assets/js/13.4c517a60.js"><link rel="prefetch" href="/assets/js/14.4123f203.js"><link rel="prefetch" href="/assets/js/15.e073aa8f.js"><link rel="prefetch" href="/assets/js/16.941e3225.js"><link rel="prefetch" href="/assets/js/17.571c90a5.js"><link rel="prefetch" href="/assets/js/18.9318d262.js"><link rel="prefetch" href="/assets/js/19.cfdffba9.js"><link rel="prefetch" href="/assets/js/20.74fff496.js"><link rel="prefetch" href="/assets/js/21.8fb40c64.js"><link rel="prefetch" href="/assets/js/22.32e773ed.js"><link rel="prefetch" href="/assets/js/23.6a30395b.js"><link rel="prefetch" href="/assets/js/24.a0a75491.js"><link rel="prefetch" href="/assets/js/25.7b896cbb.js"><link rel="prefetch" href="/assets/js/26.be97fd66.js"><link rel="prefetch" href="/assets/js/27.8edf0543.js"><link rel="prefetch" href="/assets/js/28.b7c1a332.js"><link rel="prefetch" href="/assets/js/29.4a561300.js"><link rel="prefetch" href="/assets/js/30.f40693cd.js"><link rel="prefetch" href="/assets/js/32.7d1e0d94.js"><link rel="prefetch" href="/assets/js/33.ae6ec5f9.js"><link rel="prefetch" href="/assets/js/34.7f490a68.js"><link rel="prefetch" href="/assets/js/35.89e0fe67.js"><link rel="prefetch" href="/assets/js/36.96ef3994.js"><link rel="prefetch" href="/assets/js/37.f3f01df8.js"><link rel="prefetch" href="/assets/js/38.133f0fdd.js"><link rel="prefetch" href="/assets/js/39.48909d9b.js"><link rel="prefetch" href="/assets/js/4.0b892a60.js"><link rel="prefetch" href="/assets/js/40.ac27fb56.js"><link rel="prefetch" href="/assets/js/41.1e8fbc55.js"><link rel="prefetch" href="/assets/js/42.e89327b7.js"><link rel="prefetch" href="/assets/js/43.98defb48.js"><link rel="prefetch" href="/assets/js/44.c3482581.js"><link rel="prefetch" href="/assets/js/45.5513bcbc.js"><link rel="prefetch" href="/assets/js/5.70be6a39.js"><link rel="prefetch" href="/assets/js/6.bc9351e2.js"><link rel="prefetch" href="/assets/js/7.f36db450.js"><link rel="prefetch" href="/assets/js/8.5dcb8173.js"><link rel="prefetch" href="/assets/js/9.befd8180.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3e8ba679.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>helloChen</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>welcome to my world</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>chenqi</span>
+            
+          <span data-v-25ba6db2>2018 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="helloChen" class="logo"> <span class="site-name">helloChen</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/技术/" class="nav-link"><i class="undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/categories/框架/" class="nav-link"><i class="undefined"></i>
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/categories/生活/" class="nav-link"><i class="undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络/" class="nav-link"><i class="undefined"></i>
+  网络
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/web/" class="nav-link"><i class="undefined"></i>
+  前端规划
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zuimengxinbie" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/zuimengxinbie" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/213991e00e71" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.im" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    chenqi
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>35</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>9</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/技术/" class="nav-link"><i class="undefined"></i>
+  技术
+</a></li><li class="dropdown-item"><!----> <a href="/categories/框架/" class="nav-link"><i class="undefined"></i>
+  框架
+</a></li><li class="dropdown-item"><!----> <a href="/categories/生活/" class="nav-link"><i class="undefined"></i>
+  生活
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络/" class="nav-link"><i class="undefined"></i>
+  网络
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/web/" class="nav-link"><i class="undefined"></i>
+  前端规划
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zuimengxinbie" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/zuimengxinbie" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/213991e00e71" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.im" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Vue2快速上手</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>chenqi</span>
+            
+          <span data-v-25ba6db2>2018 - </span>
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page"><section><div class="page-title"><h1 class="title">Vue2快速上手</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>chenqi</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/2/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>vue</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="vue2"><a href="#vue2" class="header-anchor">#</a> vue2</h2> <ul><li><p>原理</p> <ol><li>通过Objiect.defineProperty()把data对象上的属性全部代理到vm上</li> <li>为每一个添加到vm上的属性，都指定一个getter/setter</li> <li>在getter/setter内部去操作（读/写）data中对应的属性</li></ol></li> <li><p>@click=&quot;demo($event)&quot; 效果一直，后者可以传参</p></li> <li><p>:class=&quot;xxx&quot;,xxx可以是字符串，数组，对象</p> <p>:style=&quot;xxx&quot;,xxx可以是数组，对象</p></li> <li><p>v-model三个修饰符</p> <p>lazy：失去焦点再收集数据</p> <p>number：输入字符串转为有效的数字</p> <p>trim：输入首尾空格过滤</p></li> <li><p>过滤器</p> <ul><li>可以串联，前一个的执行结果作为后一个的参数</li> <li>可以传参，参数为函数调用第二个参数</li></ul></li> <li><p>v-for</p> <p>遍历数组，对象，字符串，指定次数（数字）</p></li> <li><p>key</p> <p>key是虚拟dom的标识，用来作为diff算法使用</p> <ul><li><p>问题</p> <blockquote><p>数据逆序添加，逆序删除等破坏顺序操作</p> <p>结构中包含输入类的DOM</p> <p>不写key，默认为index</p></blockquote></li></ul></li> <li><p>Vue.set() 与vm.$set() 不能给vm或vm的根数据对象上添加属性（data上不行）</p></li> <li><p>v-html 容易导致xss（跨站脚本工具）工具，攻击手段：盗用cookie</p></li> <li><p>v-cloak指令</p> <p>需要配合css使用</p> <p>解决Vue渲染前{{}}的问题</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[v-cloak] {
+	display: none;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>v-pre</p> <p>跳过节点的编译过程</p> <p>利用其跳过：没有使用指令语法，没有使用插值语法的节点，加快编译</p></li> <li><p>自定义指令</p> <p>bind：指令与元素成功绑定时</p> <p>inserted：指令所在元素插入页面时调用</p> <p>update：指令所在模板重新被解析时调用</p> <p>函数指向window，简写只调用了bind和update</p></li> <li><p>生命周期</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1b4875fc36af4a05aea6693b49fb05cf~tplv-k3u1fbpfcp-watermark.awebp" alt="image.png"></p></li> <li><p>组件</p> <p>用来实现局部（特定）功能效果的代码集合</p> <ul><li><p>组件使用</p> <ul><li><p>定义组件</p></li> <li><p>注册组件</p> <p>先引入</p></li> <li><p>使用组件</p> <p>角标使用</p></li></ul></li> <li><p>命名</p> <p>不可以小驼峰</p></li> <li><p>每次调用Vue.extend，返回的都是一个全新的VueCompent</p></li></ul></li> <li><p>this指向</p> <ul><li><p>在main.js中</p> <p>this指向是vue</p></li> <li><p>在组件中</p> <p>this指向vc</p></li></ul></li> <li><p>Vuecomponent.prototype.<strong>proto</strong> === Vue.prototype</p></li> <li><p>output.js中隐藏了vue关于webpack的基本配置，不可以更改</p></li> <li><p>render：h =&gt; h(app)</p></li> <li><p>ref</p> <ul><li><p>html标签</p> <p>获取的是真实dom元素</p></li> <li><p>组件标签</p> <p>获取的是组件实例对象（vc）</p></li></ul></li> <li><p>props</p> <ul><li><p>三种写法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>props:{
+	name：{
+		type: Strign // 类型
+		required: true // 必要性
+		default: '老王' // 默认值
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li> <li><p>props是只读的，不可以修改</p></li> <li><p>优先级高于data</p></li></ul></li> <li><p>mixin（混入）</p> <ul><li>自身有同名属性，自身属性优先级高，会覆盖掉混入属性</li> <li>生命周期上的，先执行混入的，在执行自身的</li> <li>两个混入，引入后方为主</li></ul></li> <li><p>插件</p> <p>可以接受多个参数</p> <p>install（vue, x,x,x,x）,后面的参数时供插件使用传递</p></li> <li><p>nextTick ：基于更新后的DOM进行某些操作，要在视图更新之后操作</p> <ul><li><p>案例1</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+    &lt;div ref=&quot;hello&quot;&gt;
+      &lt;h1&gt;Hello World ~&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+	created() {
+      console.log(111);
+      console.log(this.$refs['hello']);
+      this.$nextTick(() =&gt; {
+        console.log(222);
+        console.log(this.$refs['hello']);
+      });
+    }
+    mounted() {
+      console.log(333);
+      console.log(this.$refs['hello']);
+      this.$nextTick(() =&gt; {
+        console.log(444);
+        console.log(this.$refs['hello']);
+      });
+    },
+
+  }
+&lt;/script&gt;
+//执行顺序
+111
+undefined
+333
+&lt;div&gt;...&lt;/div&gt;
+222
+&lt;div&gt;...&lt;/div&gt;
+444
+&lt;div&gt;...&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div></li> <li><p>案例2</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+    &lt;h1 ref=&quot;hello&quot;&gt;{{ value }}&lt;/h1&gt;
+    &lt;el-button type=&quot;danger&quot; @click=&quot;get&quot;&gt;点击&lt;/el-button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    data() {
+      return { value: 'Hello World ~'};
+    },
+    methods: {
+      get() {
+        this.value = '你好啊';
+        console.log(this.$refs['hello'].innerText);
+        this.$nextTick(() =&gt; {
+          console.log(this.$refs['hello'].innerText);
+        });
+      }
+    }
+  }
+&lt;/script&gt;
+// 执行顺序
+hello World ~
+你好啊
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div></li></ul></li></ul> <h2 id="组件通讯"><a href="#组件通讯" class="header-anchor">#</a> 组件通讯</h2> <ul><li><p><strong>props</strong></p> <p>父==&gt;子</p> <p>子==&gt;父</p> <blockquote><p>通过props传递一个函数，子组件调用这个函数给数据</p></blockquote></li> <li><p><strong>组件的自定义事件</strong></p> <p>子向父</p> <blockquote><p>父：v-on  或者通过绑定ref （this.$ref.xxx.$on）</p> <p>子：this.$emit调用</p> <p>解绑： this.$off</p></blockquote></li> <li><p><strong>全局事件总线</strong></p> <ul><li><p>第一步: 安装全局事件总线</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>new Vue({
+	...
+	Vue.prototype.$bus = this
+	...
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>使用</p> <ol><li><p>Vue原型对象上包含事件处理的方法</p> <p>$on(eventName,listener):绑定自定义事件监听
+$emit(eventName,data):分发自定义事件
+$off(eventName):解绑自定义事件监听
+$once(eventName,listener):绑定事件监听,但只能处理一次</p></li></ol></li></ul></li> <li><p><strong>消息订阅与发布（pubsub）</strong></p> <ul><li><p>第一步：安装依赖</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import PubSub from 'pubsub-js'//引入
+this.pubId PubSub.subscribe(‘msgName’,functon(msgName,data){})订阅消息
+PubSub.publish(‘msgName’,data):发布消息,触发订阅的回调函数调用
+PubSub.unsubscribe(token):取消消息的订阅
+
+beforeDestroy() {
+	pubsub.unsubscribe(this.pubId);// 取消订阅
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li><p>注意</p> <p>subscribe的回调函数第二位才是想要的数据</p></li></ul></li> <li><p><strong>插槽</strong></p> <ul><li><p>v-slot:  是命名     v-slot =  是传递参数</p></li> <li><p>默认</p></li> <li><p>具名</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>父
+
+&lt;template v-slot:footer&gt;
+	&lt;div&gt;html结构2&lt;/div&gt;
+&lt;/template&gt;
+
+子
+&lt;slot name=&quot;footer&quot;&gt;插槽默认内容...&lt;/slot&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li><p>作用域</p> <p>也属于组件通讯，传递html结构 （父==&gt;子）</p> <p><strong>scopeData.games注意</strong>是下层</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>父
+&lt;template v-slot=&quot;scopeData&quot;&gt;
+    &lt;ul&gt;
+    &lt;li v-for=&quot;g in scopeData.games&quot; :key=&quot;g&quot;&gt;{{g}}&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/template&gt;
+
+子
+&lt;div&gt;
+	&lt;slot :games=&quot;games&quot;&gt;&lt;/slot&gt;
+&lt;/div&gt;
+games:['红色警戒','穿越火线','劲舞团','超级玛丽']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li></ul></li> <li><p><strong>vueX</strong></p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f006b5302cf64842a23399745ea5124d~tplv-k3u1fbpfcp-watermark.awebp" alt="image.png"></p> <ul><li><p>客人-&gt;服务员（多个）-&gt;炒菜大师傅-&gt;一单完成</p></li> <li><p>Action参数（响应组件中的动作）</p> <p>第一个参数为：context，即：store的对象context，如果想限定只能使用context中的属性或者方法，使用{commit}</p> <p>第二个参数为用户自定义</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>actions: {
+    // 获取用户信息
+    getUserInfo({commit}) {
+      return new Promise((resolve, reject) =&gt; {
+        getUserInfo().then(user =&gt; {
+          if (user.data.success) {
+            commit('setUserName', user.data.data.realName)
+          }
+          resolve(user)
+        }).catch(err =&gt; {
+          reject(err)
+        })
+      })
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></li> <li><p>mutations参数（操作数据 state）</p> <p>第一个为state</p> <p>第二个为传递过来的参数</p></li> <li><p>实际项目（项目中使用）</p> <p>模块化编码</p></li> <li><p>...mapState、...mapGetters   针对computed的简写</p></li> <li><p>...mapMutations、 ...mapActions  针对methods的简写</p></li></ul></li></ul> <h2 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h2> <ul><li><p>代理</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> 服务器
+ http://localhost:5000/students
+ 
+ 配置
+ proxy: {
+   '/atguigu': {
+       target: 'http://localhost:5000',  // 路径到5000就不往后写了
+       pathRewrite: { '^/atguigu': '' }, // 取消发送请求的前缀名
+       // ws: true, //用于支持websocket，不写默认为true
+       // changeOrigin: true //用于控制请求头中的host值，不写默认为true
+   },
+ },
+ 
+ 
+ 使用
+ axios.get(&quot;http://localhost:8080/atguigu/students&quot;).then(); // 将端口号改为默认的端口号
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></li> <li><p>vue-router</p> <ul><li><p>route</p> <p>一组映射关系（key-value）</p> <p>key： 路径</p> <p>value： component(组件)或者function对象</p></li> <li><p>$route</p> <p>存储自己的路由信息，用来获取url传递过来的参数</p></li> <li><p>router</p> <p>整个应用只有一个router，通过组件的$router属性获取到,<strong>用来跳转</strong></p></li> <li><p>注意</p> <p>路由组件一般存放在pages文件中，一般组件存放在component文件夹</p></li></ul></li> <li><p>路由<strong>query参数</strong> （浏览器地址中显示）</p> <ul><li><p>to的字符串写法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;router-link :to=&quot;`/home/detail?id=${m.id}&amp;title=${m.title}`&quot;/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>to的对象写法（<strong>path、name 均可使用</strong>）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;router-link
+	:to= &quot;{
+		path:'home/message/detail',   // 未命名
+		name: 'xiangqing'             // 命名
+		query:{
+			id: m.id,
+			title: m.title
+			}
+		}&quot;
+/&gt;		
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li></ul></li> <li><p>路由的<strong>params参数</strong> （浏览器地址中不显示）</p> <ul><li><p>to的字符串写法</p> <ul><li><p>前提：配置路由：声明接受params参数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 前提
+children:[
+    {
+        name:'xiangqing',
+        path:'detail/:id/:title', //使用占位符声明接收params参数
+        component:Detail
+    }
+]
+// 使用
+&lt;router-link :to=&quot;/home/message/detail/666/你好&quot;/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li></ul></li> <li><p>to的对象写法 (<strong>只能使用name</strong>)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;router-link 
+	:to=&quot;{
+		name:'xiangqing',
+		params:{
+		   id:666,
+           title:'你好'
+		}
+	}&quot;
+/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li></ul></li> <li><p>编程式路由导航</p> <ul><li>this.$router.push(path)    追加历史记录</li> <li>this.$router.replace(path)  替换当前记录</li> <li>this.$router.back()  返回上一记录</li> <li>this.$router.go(n)</li></ul></li> <li><p>缓存路由组件，不被销毁</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;keep-alive&gt;
+     &lt;router-view&gt;&lt;/router-view&gt;
+&lt;/keep-alive&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>衍生出两个钩子</li></ul> <ol><li><code>activated</code>路由组件被激活时触发。</li> <li><code>deactivated</code>路由组件失活时触发。</li></ol> <ul><li><p>使用</p> <p>当组件被缓存时，切换组件不会触发销毁组件流程，无法在beforeDestroy中处理事情，可以在deactivated中处理</p></li></ul></li> <li><p>路由守卫</p> <p>全局，独享，组件内守卫</p></li> <li><p>路由器两种工作模式</p> <p>hash、history(需要后端处理匹配)</p></li> <li><p><strong>但凡是在main.js中Vue实例中注册的实体，在所有的组件中都会有  （this.$.实体名）属性</strong></p></li> <li><p>async await 使用</p> <ul><li><p>如果我们没有封装请求api，而是直接调用axios，就不需要使用async await</p></li> <li><p>封装了axios，调用函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {reqCateGoryList} from '@/api'
+export default {
+    actions:{
+        categoryList(){
+            let result =  reqCateGoryList()
+            console.log(result)
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="https://img-blog.csdnimg.cn/d2ba586e3edd494b9bf517cb4ee86580.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5q-b5q-b6Jmr5ZGc5ZGc,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p> <ul><li><p>所以可以使用then、catch 方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>actions:{
+        categoryList(){
+            let result =  reqCateGoryList().then(
+                res=&gt;{
+                console.log(&quot;res&quot;)
+                console.log(res)
+                return res
+                }
+            )
+            console.log(&quot;result&quot;)
+            console.log(result)
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></li> <li><p><strong>promise是异步请求，请求需要花费时间</strong></p> <p>由于我们的promis是异步请求，我们发现请求需要花费时间，但是它是异步的，所有后面的console.log(“result”)；console.log(result)会先执行，等我们的请求得到响应后，才执行console.log(“res”)；console.log(res)，这也符合异步的原则，但是我们如果在请求下面啊执行的是将那个请求的结果赋值给某个变量，这样就会导致被赋值的变量先执行，并且赋值为undefine，因为此时promise还没有完成。</p> <p><img src="https://img-blog.csdnimg.cn/afe1c716352248009e7289151e933391.png" alt="在这里插入图片描述"></p></li> <li><p>引入async、await</p> <ul><li>不会输出undefined了，不然还得再接受到的数据中去写函数（老套路）</li></ul></li></ul></li></ul></li> <li><p>防抖与节流</p> <ul><li><p>防抖： 用户操作很频繁，但是只执行一次，减少业务负担。</p></li> <li><p>节流：用户操作很频繁，但是把频繁的操作变为少量的操作，使浏览器有充分的时间解析代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {throttle} from 'lodash'
+ methods: {
+    //鼠标进入修改响应元素的背景颜色
+    //采用键值对形式创建函数，将changeIndex定义为节流函数，该函数触发很频繁时，设置50ms才会执行一次
+    changeIndex: throttle(function (index){
+      this.currentIndex = index
+    },50),
+    //鼠标移除触发时间
+    leaveIndex(){
+      this.currentIndex = -1
+    }
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li></ul></li> <li><p>watch</p> <p>watch监听属性范围</p> <ul><li>自己定义的 <strong>data</strong></li> <li>系统自带的  <strong>$route</strong></li> <li>父组件向子组件传递的数据  <strong>prop</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>watch:{
+    bannerList(newValue,oldValue){
+        //this.$nextTick()使用
+        this.$nextTick(()=&gt;{
+          let mySwiper = new Swiper(document.getElementsByClassName(&quot;swiper-container&quot;),{
+            pagination:{
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            // 如果需要滚动条
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+          })
+        })
+    }
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div></li> <li><p>getters的使用</p> <ul><li>getters是vuex store的计算属性</li> <li>使用场景
+<ul><li>不适用getters，组件中获取state中的数据表达式为： this.$stroe.state.子模块.属性</li> <li>多个组件用到此属性，要多次复制这个表达式，然后抽取到一个共享函数在多处导入它，无论哪种方式都不是很理想</li></ul></li> <li>解决问题
+<ul><li>getter相当于store的计算属性，会根据返回值依赖进行缓存</li> <li>将store中的数据封装为函数，代码维护变得简单，只有当它的依赖值发生改变才会被重新计算</li> <li>getters是全局属性，不分模块的。即store中所有模块的getter内的函数都可以通过$store.getter.函数名获取</li></ul></li></ul></li> <li><p>vue-router</p> <p>支持滚动行为</p></li> <li><p>如果返回值为 {} 或者 []</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>state.goodInfo.categoryView||{}
+state.goodInfo.categoryView||[]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>失焦事件</p> <ul><li>无任何输入时，不会触发change</li> <li>输入后值没有发生变更</li></ul></li> <li><p>js中引入图片</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>src=&quot;${require('@/assets/pay.jpg')}&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>二级路由<strong>书写注意事项</strong></p> <p>二级路由要么不写 /</p> <p>要么写全</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//个人中心
+    {
+        name: 'Center',
+        path: '/center',
+        component:  () =&gt; import('@/pages/Center'),
+        children: [
+            {
+                //二级路由要么不写/，要么写全：'/center/myorder'
+                path: 'myorder',
+                component: () =&gt; import('@/pages/Center/MyOrder')
+            },
+        ]
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></li> <li><p>插件</p> <p>每一个插件都会有一个install方法，intall后就可以在我们的代码中使用该插件。</p> <p>插件有两个参数（vue实例，自定义参数）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Vue.use(ElementUI, {
+  size: Cookies.get('size') || 'small', // set element-ui default size
+} )
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>插槽</p> <p>父向子传递html结构</p> <ul><li><p>父组件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;HintButton title=&quot;提示&quot; icon=&quot;el-icon-delete&quot; type=&quot;danger&quot; @click=&quot;handler&quot;&gt;
+      &lt;template v-slot:default=&quot;slopProps&quot; &gt;
+        &lt;p&gt;{{slopProps}}&lt;/p&gt;
+        &lt;p&gt;{{slopProps.item1}}&lt;/p&gt;
+        &lt;p v-for=&quot;(item,index) in slopProps.item1&quot;&gt;{{index}}----{{item}}&lt;/p&gt;
+      &lt;/template&gt;
+    &lt;/HintButton&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li> <li><p>子组件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;slot  :item1=&quot;{'a':1,'b':2}&quot; item2=&quot;asd1&quot;&gt;e了吗&lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>展示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{'item1': {'a':1,'b':2}, 'item2': 'asd1'}
+{'a':1,'b':2}
+a----1
+b----2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li></ul></li> <li><p>页面缓存</p> <ul><li><p>使用keep-alive实现路由缓存</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;transition name=&quot;fade-transform&quot; mode=&quot;out-in&quot;&gt;
+    &lt;keep-alive :include=&quot;cachedViews&quot;&gt;
+    	&lt;router-view :key=&quot;key&quot; /&gt;
+    &lt;/keep-alive&gt;
+&lt;/transition&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>记录页面滚动位置（vue内封装）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>new Router({
+    mode: 'history',
+    scrollBehavior (to, from, savedPosition) {
+      if (savedPosition) { //如果savedPosition存在，滚动条会自动跳到记录的值的地方
+        return savedPosition
+      } else {
+        return {x: 0, y: 0}//savedPosition也是一个记录x轴和y轴位置的对象
+      }
+    },
+    routes: []
+ })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></li> <li><p><strong>详情页返回列表页不刷新，其他页面进入列表页刷新</strong></p> <ul><li><p>不使用 keep-alive</p> <p>beforeRouteEnter -  created - mounted - <strong>destroyed</strong></p></li> <li><p>使用keep-alive</p> <ul><li><p>初次</p> <p>beforeRouteEnter - <strong>created</strong> - <strong>mounted</strong> - activated - deactivated</p></li> <li><p>再次</p> <p>beforeRouteEnter - activated - deactivated</p></li></ul></li> <li><p>解决方案</p> <ul><li><p>路由的mate中添加一个变量，表示是否需要刷新</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{path: ‘/list’, name: ‘Message’, meta: {keepAlive: true, isNeedRefresh: true}, component: Message}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>页面处理</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>data () {
+	return {
+		isFirstEnter: false
+	}
+},
+beforeRouteEnter(to, from, next) {
+	if(from.name == 'detail') {
+		to.meta.isNeedRefresh = false
+	}
+	next()
+},
+mounted () {
+	this.isFirstEnter = true
+},
+activated() {
+	if(this.$route.meta.isNeedRefresh ||this.isFirstEnter){
+		this.getList()
+	}
+	this.isFirstEnter = false
+	this.$route.meta.isNeedRefresh = true
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></li></ul></li></ul></li></ul></li></ul></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/pages/vue210402/#vue2" class="sidebar-link reco-side-vue2" data-v-cb1513f6>vue2</a></li><li class="level-2" data-v-cb1513f6><a href="/pages/vue210402/#组件通讯" class="sidebar-link reco-side-组件通讯" data-v-cb1513f6>组件通讯</a></li><li class="level-2" data-v-cb1513f6><a href="/pages/vue210402/#其他" class="sidebar-link reco-side-其他" data-v-cb1513f6>其他</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 helloChen
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div><canvas id="vuepress-canvas-ribbon"></canvas></div></div>
+    <script src="/assets/js/app.759f0509.js" defer></script><script src="/assets/js/3.fbf107cc.js" defer></script><script src="/assets/js/1.5d910c0c.js" defer></script><script src="/assets/js/31.794ec7a4.js" defer></script>
+  </body>
+</html>

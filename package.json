@@ -1,0 +1,22 @@
+{
+  "name": "helloChen",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build .",
+    "github": "bash github.sh",
+    "gitee": "bash gitee.sh"
+  },
+  "devDependencies": {
+    "vuepress": "1.8.2",
+    "vuepress-plugin-ribbon": "^1.1.2",
+    "vuepress-theme-reco": "1.6.10"
+  },
+  "description": "welcome to my world",
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+  }
+}
