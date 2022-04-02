@@ -1,6 +1,6 @@
 
 module.exports = {
-  title: "helloChen",
+  title: "helloShen",
   description: "welcome to my world",
   dest: "docs",
   head: [
@@ -83,7 +83,7 @@ module.exports = {
     // 最后更新时间
     "lastUpdated": "Last Updated",
     // 作者
-    "author": "chenqi",
+    "author": "十二个满月",
     "authorAvatar": "/avatar.png",
     // 备案号
     "record": "A1.0",

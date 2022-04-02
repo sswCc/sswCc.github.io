@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Hello, Chen
+heroText: Hello, shen
 tagline: 不要在该奋斗的年纪选择安逸，在这记录了我成长的脚步
 bgImage: '/banner.png'
 bgImageStyle: {
